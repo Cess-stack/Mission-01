@@ -21,3 +21,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore Node.js stuff
+node_modules
+.env
+
+# Ignore React build output
+car-identifier-frontend/node_modules
+car-identifier-frontend/build
