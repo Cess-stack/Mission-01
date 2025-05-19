@@ -1,28 +1,15 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from '../../assets/logo.png';   
 
-const Navbar = () => {
-    return (
-        <nav className="navbar">
-            <div className="navbar-left">
-                <img src={logo} alt="logo" />
-                <div className="brand">
-                    <span className="brand-main">CarVision</span>
-                    <span className="brand-sub">Car Identifier</span>
-                </div>  
-            </div>  
-
-            <ul className="navbar-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Identify</a></li>
-                <li><a href="#">Results</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-            
-        </nav>
-    );
-};
-
-export default Navbar;
+export default function Navbar() {
+  return (
+    <nav className="navbar">
+      <div className="logo">🚗 Car Identifier</div>
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/identify">Identify</Link></li>
+        <li><Link to="/about">About</Link></li>
+      </ul>
+    </nav>
+  );
+}
