@@ -1,22 +1,23 @@
 import React from 'react';
 import "./Navbar.css";
+import logo from '../../assets/logo.png';   
 
 const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-left">
-                <img src="" alt="" />
+                <img src={logo} alt="turners logo" />
                 <div className="brand">
-                    <span className="brand-main">Car Identifier</span>
-                    <span className="brand-sub">Identify your car</span>
+                    <span className="brand-main">CarVision</span>
+                    <span className="brand-sub">Car Identifier</span>
                 </div>  
             </div>  
 
             <ul className="navbar-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Claims</a></li>
-                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Identify</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Dashboard</a></li>
                 <li><a href="#">About Us</a></li>
             </ul>
             
