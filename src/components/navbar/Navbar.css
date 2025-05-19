@@ -1,90 +1,57 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Try a sleeker font */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand Styling */
 .brand-main {
-    color: #0047ba;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  .brand-sub {
-    font-size: 0.75rem;
-    color: #555;
-    letter-spacing: 1.5px;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    max-width: 20px; 
-    height: auto;     
-  }
-  
-  .brand {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-  }
-  
-  .brand-main {
-    color: #0047ba;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  .brand-sub {
-    font-size: 0.75rem;
-    color: #333;
-    letter-spacing: 2px;
-  }
-  
-  .navbar-links {
-    display: flex;
-    list-style: none;
-    gap: 24px;
-  }
-  
-  .navbar-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.2s ease;
-  }
-  
-  .navbar-links a:hover {
-    color: #0047ba;
-  }
-  
-  .login-button {
-    padding: 8px 16px;
-    border: 1px solid #ccc;
-    background: white;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background 0.2s ease;
-  }
-  
-  .login-button:hover {
-    background-color: #f0f0f0;
-  }
-  
+  color: #0047ba;
+  font-weight: bold;
+  font-size: 1.8rem; /* Slight size boost */
+}
+
+.brand-sub {
+  font-size: 0.85rem;
+  color: #555;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; /* Adds a modern touch */
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: #ff6600; /* Slight pop on hover */
+}
+
+/* Login Button */
+.login-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
