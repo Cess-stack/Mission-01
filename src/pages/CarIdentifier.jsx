@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './CarIdentifier.css';   
+import '../../styles/CarIdentifier.css';   
 
 export default function CarIdentifier() {
     const [image, setImage] = useState(null);
     const [previewUrl, setPreviewUrl] = useState(null);
     const [prediction, setPrediction] = useState(null);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = false;
     const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
   
     const handleImageChange = (e) => {
@@ -41,28 +41,30 @@ export default function CarIdentifier() {
         setLoading(false);
       }
     };
-  
+
     return (
-      <div>
+      <div className="identify-container">
         <h1>Car Identifier</h1>
         <form onSubmit={handleSubmit}>
           <div>
             <input type="file" accept="image/*" onChange={handleImageChange} />
           </div>
+
           {previewUrl && (
-            <div>
-              <img src={previewUrl} alt="Preview" style={{ maxWidth: '300px' }} />
+            <div className="preview-container">
+              <img src={previewUrl} alt="Preview" />
             </div>
           )}
+
           <div>
             <button type="submit" disabled={loading}>
               {loading ? 'Predicting...' : 'Identify Car'}
             </button>
           </div>
         </form>
-  
+
         {prediction && (
-          <div>
+          <div className="prediction-container">
             <h2>Prediction</h2>
             <p>
               {prediction.tagName} — {(prediction.probability * 100).toFixed(2)}%
@@ -71,5 +73,4 @@ export default function CarIdentifier() {
         )}
       </div>
     );
-  }
-  
+}
