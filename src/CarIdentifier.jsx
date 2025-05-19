@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './CarIdentifier.css';   
 
-
 export default function CarIdentifier() {
     const [image, setImage] = useState(null);
     const [previewUrl, setPreviewUrl] = useState(null);
