@@ -1,21 +1,22 @@
 import React from 'react';
-import CarIdentifier from './CarIdentifier';
 import Navbar from "./components/navbar/Navbar"; 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Identify from './pages/Identify';
-
-
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   return (
     <>
-    <Navbar />
-    <Router>
-      <Routes>
-        <Route path="/" element={<CarIdentifier />} />
-        <Route path="/identify" element={<Identify />} />
-      </Routes>
-    </Router>
+      
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/identify" element={<Identify />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
     </>
   );
 }

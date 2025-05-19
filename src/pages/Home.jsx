@@ -1,4 +1,4 @@
-export default function Home() {
-    return <h1>Welcome to the Car Identifier</h1>;
-}
-  
+const Home = () => {
+    return <div>Home Page</div>;
+  };
+  export default Home;
