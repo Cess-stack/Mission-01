@@ -1,4 +1,16 @@
-* {
+.brand-main {
+    color: #0047ba;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .brand-sub {
+    font-size: 0.75rem;
+    color: #555;
+    letter-spacing: 1.5px;
+  }
+  
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -23,8 +35,8 @@
   }
   
   .logo {
-    height: 40px;
-    margin-right: 12px;
+    max-width: 20px; 
+    height: auto;     
   }
   
   .brand {
