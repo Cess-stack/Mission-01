@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import '../../styles/CarIdentifier.css';   
+import '../../styles/Identify.css';   
 
-export default function CarIdentifier() {
+export default function Identify() {
     const [image, setImage] = useState(null);
     const [previewUrl, setPreviewUrl] = useState(null);
     const [prediction, setPrediction] = useState(null);
-    const [loading, setLoading] = false;
+    const [loading, setLoading] = useState(false);
     const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
   
     const handleImageChange = (e) => {
@@ -44,9 +44,9 @@ export default function CarIdentifier() {
 
     return (
       <div className="identify-container">
-        <h1>Car Identifier</h1>
+        <h1>Identify Car Type</h1>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="upload-container">
             <input type="file" accept="image/*" onChange={handleImageChange} />
           </div>
 
@@ -66,9 +66,7 @@ export default function CarIdentifier() {
         {prediction && (
           <div className="prediction-container">
             <h2>Prediction</h2>
-            <p>
-              {prediction.tagName} — {(prediction.probability * 100).toFixed(2)}%
-            </p>
+            <p>{prediction.tagName} — {(prediction.probability * 100).toFixed(2)}%</p>
           </div>
         )}
       </div>

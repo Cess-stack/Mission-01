@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import turnersLogo from "../../assets/turnersLogo.png";
 
  function Navbar() {
   return (
 <nav className="navbar">
   <div className="navbar-left">
-    <img src="logo.png" alt="Brand Logo" className="logo" />
+    <img src={turnersLogo} alt="Brand Logo" className="logo" />
     <div className="brand">
-      <span className="brand-main">YourBrand</span>
-      <span className="brand-sub">Your tagline</span>
     </div>
   </div>
   <ul className="navbar-links">

@@ -8,6 +8,11 @@ body {
   
   /* Main Container */
   .identify-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
@@ -26,12 +31,13 @@ body {
   
   /* Upload Section */
   input[type="file"] {
-    padding: 10px;
+    padding: 12px;
     border: 2px dashed #0047ba;
     background-color: #f9f9f9;
     cursor: pointer;
-    width: 100%;
-    margin-bottom: 15px;
+    width: 80%; /* Reduce width */
+    max-width: 300px; /* Prevent excessive stretching */
+    text-align: center;
   }
   
   /* Preview Image */
@@ -59,13 +65,14 @@ body {
   
   /* Prediction Result */
   .prediction-container {
-    margin-top: 20px;
     padding: 15px;
     background: #0047ba;
     color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1.2rem;
+    text-align: center;
   }
+  
 
   .cta-button {
     background-color: #ff6600 !important;
