@@ -1,69 +1,46 @@
-/* Full-page centering */
-.page-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 120px); /* Adjust if you have navbar/footer */
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-
-/* General Layout */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f7f7f7;
-  margin: 0;
-  padding: 0;
-}
-
-/* Main Container */
+/* General Styles */
 .identify-container {
   max-width: 600px;
-  margin: 80px auto 40px auto;
-  padding: 32px;
-  background-color: #ffffff;
+  margin: 80px auto;
+  padding: 24px;
+  background: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
-/* Header */
-.identify-container h1 {
-  font-size: 2.2rem;
+h1 {
+  font-size: 2rem;
   color: #0057B8;
-  font-weight: 700;
   margin-bottom: 10px;
 }
 
-.identify-container p {
+p {
   font-size: 1.1rem;
   color: #555;
-  margin-bottom: 24px;
 }
 
 /* File Upload */
 .upload-container input[type="file"] {
-  padding: 14px;
+  padding: 12px;
   border: 2px dashed #0057B8;
-  border-radius: 10px;
   background-color: #f9f9f9;
-  width: 100%;
+  border-radius: 10px;
+  width: 80%;
   max-width: 350px;
-  margin: 0 auto 16px auto;
   cursor: pointer;
 }
 
-/* Button */
+/* Buttons */
 .cta-button {
   background-color: #F37021;
-  color: #fff;
-  padding: 14px 28px;
+  color: white;
+  padding: 12px 24px;
   font-size: 1rem;
   font-weight: 600;
-  border: none;
   border-radius: 8px;
   cursor: pointer;
+  border: none;
   transition: background 0.3s ease;
 }
 
@@ -77,30 +54,26 @@ body {
   opacity: 0.7;
 }
 
-/* Image Preview */
-.preview-container {
-  margin: 24px 0;
-}
-
-.preview-container img {
-  max-width: 100%;
-  max-height: 300px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.preview-container img:hover {
-  transform: scale(1.02);
-}
-
-/* Prediction Box */
+/* Prediction Display */
 .prediction-container {
   margin-top: 24px;
   padding: 16px;
-  background-color: #0057B8;
-  color: #fff;
+  background: #0057B8;
+  color: white;
   border-radius: 10px;
   font-size: 1.2rem;
-  font-weight: 500;
+}
+
+/* Error Message */
+.error-text {
+  color: red;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Loading State */
+.loading-text {
+  color: #F37021;
+  font-weight: 600;
+  margin-top: 10px;
 }
