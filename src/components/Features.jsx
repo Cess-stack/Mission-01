@@ -1,18 +1,20 @@
 // src/components/Features.jsx
 import React from 'react';
-import '../styles/Features.css';  // Updated path to styles folder
-import FeatureCard from './FeatureCard';  // Component is in the same folder
-
+import '../styles/Features.css';
+import Map from '../assets/features/Map.webp';
+import Wizard from '../assets/features/wizard.png';
+import FeatureCard from './FeatureCard';
+  
 const features = [
   {
-    image: '../assets/features/Map.webp',
-    title: 'Feature One',
-    description: 'Highlight a key feature of your page.'
+    image: Map,
+    title: 'Accurate Identification',
+    description: 'Get precise results with our advanced AI technology'
   },
   {
-    image: '../assets/features/wizard.png',
-    title: 'Feature Two',
-    description: 'Another important section with relevant details.'
+    image: Wizard,
+    title: 'Instant Results',
+    description: 'Quick and efficient processing for fast identification'
   }
 ];
 
