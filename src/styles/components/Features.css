@@ -1,27 +1,40 @@
 /* src/styles/Features.css */
-/* src/styles/Features.css */
+
 .features-section {
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .section-title {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-    color: #333;
-  }
-  
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #0075C9; /* Turners Blue */
+  font-weight: 600; /* Optional: stronger heading */
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #0075C9;
+  margin: 1rem auto 0 auto;
+  border-radius: 2px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-evenly;  /* even spacing between and around cards */
+  gap: 2rem;                      /* consistent space between cards */
+  padding: 0 2rem;                /* optional side padding */
+  flex-wrap: wrap;               /* allows wrapping on smaller screens */
+}
+
+@media (max-width: 768px) {
   .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  @media (max-width: 768px) {
-    .features-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+}

@@ -1,6 +1,6 @@
 // src/components/features/Features.jsx
 import React from 'react';
-import '../../styles/components/Features.css';
+import '../../styles/components/FeatureCard.css';
 import FeatureCard from './FeatureCard/FeatureCard';
 import Map from '../../assets/images/Map.webp';
 import Wizard from '../../assets/images/wizard.png';
@@ -27,7 +27,7 @@ const features = [
 const Features = () => {
   return (
     <div className="features-section">
-      <h2 className="section-title">Our Features</h2>
+      <h2 className="section-title">Our AI Features:</h2>
       <div className="features-grid">
         {features.map((feature, index) => (
           <FeatureCard

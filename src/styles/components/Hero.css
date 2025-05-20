@@ -1,27 +1,45 @@
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 110vh;  /* Increased height from 60vh to 80vh */
-    width: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../assets/hero.png');
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding: 0 5%;
     color: white;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
     position: relative;
-}
+  }
+  
+  /* Optional overlay if text is hard to read on image */
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
   
   .hero-content {
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 80%;  /* Reduced max-width */
-    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    margin-top: -180px; 
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+  }
+    	
+  .hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;   
   }
   
   /* Rest of your existing styles can stay the same */
@@ -50,21 +68,19 @@
     margin-bottom: 24px;
 }
 
-/* Refined button styling */
 .cta-button {
     padding: 14px 28px;
     border: none;
-    background-color: #ff6600;
+    background-color: #bc2b30 !important;
     color: white;
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
-
-/* Adds subtle hover effect */
-.cta-button:hover {
-    background-color: #cc5200;
-    transform: scale(1.05); /* Slight scaling for emphasis */
-}
+  }
+  
+  .cta-button:hover {
+    background-color: #f9f6f6;
+    transform: scale(1.05);
+  }
+  
