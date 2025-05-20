@@ -1,10 +1,10 @@
-// src/components/Features.jsx
+// src/components/features/Features.jsx
 import React from 'react';
-import '../styles/Features.css';
-import Map from '../assets/features/Map.webp';
-import Wizard from '../assets/features/wizard.png';
-import Laptop from '../assets/features/laptop.png';        // Add this import
-import FeatureCard from './FeatureCard';
+import '../../styles/components/Features.css';
+import FeatureCard from './FeatureCard/FeatureCard';
+import Map from '../../assets/images/Map.webp';
+import Wizard from '../../assets/images/wizard.png';
+import Laptop from '../../assets/images/laptop.png';
 
 const features = [
   {

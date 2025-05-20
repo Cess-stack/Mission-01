@@ -1,6 +1,6 @@
-// src/components/Hero.jsx
+// src/components/hero/Hero.jsx
 import React from 'react';
-import '../styles/Hero.css';
+import '../../styles/components/Hero.css';
 
 const Hero = () => {
   return (

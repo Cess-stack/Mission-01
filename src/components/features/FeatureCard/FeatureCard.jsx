@@ -1,6 +1,6 @@
-// src/components/FeatureCard.jsx
+// src/components/features/FeatureCard/FeatureCard.jsx
 import React from 'react';
-import '../styles/FeatureCard.css';
+import '../../styles/components/FeatureCard.css';
 
 const FeatureCard = ({ image, title, description }) => {
   return (
