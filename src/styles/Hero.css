@@ -2,18 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;  /* Reduced height */
-    width: 100%;   /* Full width */
+    height: 80vh;  /* Increased height from 60vh to 80vh */
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../assets/hero.png');  /* Using CSS background */
+    background-image: url('../assets/hero.png');
     color: white;
     text-align: center;
-    padding: 20px;  /* Reduced padding */
-    margin: 0;      /* Remove any margins */
+    padding: 20px;
+    margin: 0;
     position: relative;
-  }
+}
   
   .hero-content {
     z-index: 1;
