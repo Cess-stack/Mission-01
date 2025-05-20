@@ -1,6 +1,6 @@
+// src/components/Hero.jsx
 import React from 'react';
 import '../styles/Hero.css';
-import tina from '../assets/tina.jpg';  // Adjust the path based on your image location
 
 const Hero = () => {
   return (

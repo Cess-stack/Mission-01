@@ -3,7 +3,8 @@ import React from 'react';
 import '../styles/Features.css';
 import Map from '../assets/features/Map.webp';
 import Wizard from '../assets/features/wizard.png';
-import Car from '../assets/features/car.png';  // Add this import
+import Laptop from '../assets/features/laptop.png';        // Add this import
+import FeatureCard from './FeatureCard';
 
 const features = [
   {
@@ -17,7 +18,7 @@ const features = [
     description: 'Quick and efficient processing for fast identification'
   },
   {
-    image: Car,
+    image: Laptop,
     title: 'Comprehensive Database',
     description: 'Access to extensive car model information'
   }
