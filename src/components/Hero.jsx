@@ -1,15 +1,12 @@
 import React from 'react';
-import './Hero.css';
+import './styles/Hero.css';
 
-function Hero() {
+const Hero = () => {
   return (
-
-    <div className="hero-section">
-    <div className="hero-content">
-      <h1>Your Catchy Headline</h1>
-      <p>A sleek, professional landing page to make an impression.</p>
+    <div className="hero">
+      <h1>Car Identifier</h1>
+      <p>Identify your car with just a photo</p>
       <button className="cta-button">Get Started</button>
-    </div>
     </div>
   );
 };
