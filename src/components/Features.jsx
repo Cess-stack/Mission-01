@@ -3,8 +3,8 @@ import React from 'react';
 import '../styles/Features.css';
 import Map from '../assets/features/Map.webp';
 import Wizard from '../assets/features/wizard.png';
-import FeatureCard from './FeatureCard';
-  
+import Car from '../assets/features/car.png';  // Add this import
+
 const features = [
   {
     image: Map,
@@ -15,6 +15,11 @@ const features = [
     image: Wizard,
     title: 'Instant Results',
     description: 'Quick and efficient processing for fast identification'
+  },
+  {
+    image: Car,
+    title: 'Comprehensive Database',
+    description: 'Access to extensive car model information'
   }
 ];
 
