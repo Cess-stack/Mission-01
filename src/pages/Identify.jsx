@@ -9,7 +9,8 @@ export default function Identify() {
   const [prediction, setPrediction] = useState(null); // Stores AI prediction results
   const [loading, setLoading] = useState(false); // Tracks loading state
   const [errorMessage, setErrorMessage] = useState(null); // Stores error messages
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000"; // API endpoint URL
+  const API_URL = "https://9096696202707075072.us-central1-566099857559.prediction.vertexai.goog";
+
 
   // Handles file upload
   const handleImageChange = (e) => {
